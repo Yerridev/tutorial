@@ -1,10 +1,11 @@
 ---
+import Saludo from "../components/Saludo"
 import LayoutBase from "../layouts/LayoutBase.astro"
-
 const titulo = "Yerridev"
 ---
 
 <LayoutBase titulo={titulo}>
 	<h2>Subtitulo de mi inicio</h2>
+	<Saludo client:load mensaje={["Hola", "Que tal", "Hola a todos"]} />
 </LayoutBase>
 
